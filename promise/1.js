@@ -49,6 +49,8 @@ let p = new PromiseA(resolve => {
     console.log('done');
     resolve('5秒');
   }, 5000)
+
 }).then(tip => {
   console.log(tip);
 })
+// https://zhuanlan.zhihu.com/p/58428287
