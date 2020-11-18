@@ -38,6 +38,80 @@ class BST {
             }
         }
     }
+
+    preOrderTravelsal(visitor) {
+        if (visitor === null) return
+        const travelSal = (node) => {
+            if (node === null) return
+            console.log(node.element)
+            visitor.visit(node.element)
+            travelSal(node.left)
+            travelSal(node.right)
+        }
+
+        travelSal(this.root)
+    }
+
+    centerTravelsal(visitor) {
+        if (visitor === null) return
+        const travelSal = (node) => {
+            if (node === null) return
+            travelSal(node.left)
+            console.log(node.element)
+            visitor.visit(node.element)
+            travelSal(node.right)
+        }
+
+        travelSal(this.root)
+    }
+
+    postolderTravelsal(visitor) {
+        if (visitor === null) return
+        const travelSal = (node) => {
+            if (node === null) return
+            travelSal(node.left)
+            travelSal(node.right)
+            console.log(node.element)
+            visitor.visit(node)
+        }
+
+        travelSal(this.root)
+    }
+
+    // 层序遍历  优化递归 或者 栈
+    levelOrderTravelsal(visitor) {
+        if (this.root === null || visitor === null) return null
+        let stack = [this.root]
+        let index = 0
+        let currentNode = null
+        while(currentNode = stack[index++]) {
+            visitor.visit(currentNode)
+            if (currentNode.left) {
+                stack.push(currentNode.left)
+            }
+
+            if (currentNode.right) {
+                stack.push(currentNode.right)
+            }
+        }
+    }
+
+    invertTree() {
+        if (this.root === null ) return null
+        let stack = [this.root]
+        let index = 0
+        let currentNode = null
+        while(currentNode = stack[index++]) {
+            // visitor.visit(currentNode)
+            let tep = currentNode.left
+            currentNode.left = currentNode.right
+            currentNode.right = tep
+        }
+
+        return this.root
+    }
+
+
 }
 
 
@@ -47,4 +121,24 @@ arr.forEach(item => {
     bst.add(item)
 })
 
-console.dir(bst, {depth: 100})
+// console.dir(bst, {depth: 100})
+
+bst.centerTravelsal({
+    visit(node) {
+        console.log(node, '*******')
+    }
+})
+
+bst.invertTree()
+
+bst.centerTravelsal({
+    visit(node) {
+        console.log(node, '2222222')
+    }
+})
+
+// bst.levelOrderTravelsal({
+//     visit(node) {
+//         console.log(node.element, '*******')
+//     }
+// })
