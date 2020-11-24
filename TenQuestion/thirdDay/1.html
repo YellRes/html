@@ -61,15 +61,59 @@
   <script>
     const traffic = document.querySelector('.traffic')
 
-    function signalLoop(subject, signals = []) {
-      const signalCount = signals.length
-      function updateState(i) {
-        const {signal, duration} = signals[i % signalCount]
-        subject.className = signal
-        setTimeout(updateState.bind(null, i + 1), duration)
-      }
+    // function signalLoop(subject, signals = []) {
+    //   const signalCount = signals.length
+    //   function updateState(i) {
+    //     const {signal, duration} = signals[i % signalCount]
+    //     subject.className = signal
+    //     setTimeout(updateState.bind(null, i + 1), duration)
+    //   }
 
+    // }
+
+    // function wait(ms) {
+    //   return new Promise(resolve => {
+    //     setTimeout(resolve, ms)
+    //   })
+    // }
+
+    // (
+    //   async function () {
+    //     while(1) {
+    //       await wait(5000)
+    //       traffic.className = 'traffic wait'
+    //       await wait(1500)
+    //       traffic.className = 'traffic stop'
+    //       await wait(3500)
+    //       traffic.className = 'traffic pass'
+    //     }
+    //   }()
+    // )
+
+    function wait(ms) {
+      return new Promise(resolve => {
+        setTimeout(resolve, ms)
+      })
     }
+
+    async function signalLoop(subject, signal = [], onSignal) {
+      const signalCount = signal.length
+      for (let i = 0; ; i++) {
+        const {signal, duration} = signal[i % signalCount]
+        await onSignal(subject, signal)
+        await wait(duration)
+      }
+    }
+
+    const signals = [
+      {signal: 'pass', duration: 5000},
+      {signal: 'wait', duration: 3500},
+      {signal: 'stop', duration: 1500},
+    ];
+
+    signalLoop(traffic, signals, (subject, signal) => {
+      subject.className = `traffic ${signal}`;
+    });
 
 
   </script>
