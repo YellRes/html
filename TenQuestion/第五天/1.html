@@ -78,65 +78,71 @@
 
   <script>
     const text = `If you already have experience making drawings with computers, you know that in that process you draw a circle, then a rectangle...
+...
 ...Each pipe is also known as a thread.`
-    
-    const panel = document.getElementById('panel') 
-    panel.addEventListener('click', main)
+
+    const panel = document.getElementById('panel');
+    panel.addEventListener('click', main);
 
     function wait(ms) {
-      return new Promise(resolve => {
-        setTimeout(resolve, ms)
-      })
+      return new Promise((resolve) => {
+        setTimeout(resolve, ms);
+      });
     }
 
     async function starting(el, count = 3) {
-      el.innerHTML = count
+      el.innerText = count;
       while(count--) {
-        await wait(1000)
-        el.innerHTML = count
+        await wait(1000);
+        el.innerText = count;
       }
-      el.innerText = ''
+      el.innerText = '';
     }
 
-    const startingEl = document.getElementById('starting')
+    const startingEl = document.getElementById('starting');
 
     async function main() {
-      panel.innerHTML = text
-      await starting(startingEl)
-
-      const countDownPromise = countDown(countDownEl, 10)
-      const typingPromise = typing(typedEl, text)
-      await Promise.race([countDownPromise, typingPromise])
-      console.log('结束');
+      panel.innerText = text;
+      await starting(startingEl);
     }
 
     async function countDown(el, sec) {
       while(sec--) {
-        const minute = Math.floor(sec / 60)
+        const minute = Math.floor(sec / 60 )
         const second = sec % 60
-        const time = `${minute > 10 ? minute: `0${minute}`} : ${second > 10 ? second : `0${second}`} }`
-
-        el.innerHTML = time
+        const time = `${minute > 10 ? minute : `0${minute}`}:${secound > 10 ? second : `0${second}`}`
+        el.innerText = time
         await wait(1000)
       }
     }
 
-    async function typing(el, text) {
+    async function typings(el, text) {
       for (let i = 0; i < text.length; i++) {
         const char = text[i]
-        el.innerHTML = '_'
+        // el.innerText = '_'
+
         const key = await new Promise(resolve => {
-          document.addEventListener('keydown', function f({key}) {
+          document.addEventListener('keydown', ({key}) => {
             if (key === char) {
-              documet.removeEventListener('keydown', f)
+              document.removeEventListener('keydown', f)
               resolve(key)
             }
           })
         })
 
-        el.innerText = el.innerText.slice(0, -1) + key + '_'
+        el.innerText = el.innerText.slice(0, -1) + key + '_';
       }
     }
+
+    async function main() {
+      pannel.innerText = text
+      await starting(startingEl)
+      const countDownPromise = countDown(countdownEl, 10)
+      const typingPromise = typings(typedEl, text)
+      await Promise.race([countDownPromise, typingPromise])
+      console.log('结束');
+    }
+
   </script>
 </body>
 </html>
