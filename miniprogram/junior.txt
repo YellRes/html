@@ -1,0 +1,27 @@
+1. 生命周期
+page
+onLoad, onShow, onReady,
+onLoad(options)
+获取页面的传参 
+
+onShow()
+页面出现就会执行
+
+onReady()
+页面首次渲染完毕时执行 wx.setNavigationBarTitle
+
+onHide, onUnload
+
+onPullDownRefresh, onReachBottom
+
+onShareAppMessage
+
+onPageScroll
+onResize
+onTabItemTap
+
+Page.route
+返回当前路径
+
+通过 EventChannel 和另外的页面发送数据 
+wx.navigateTo({})
