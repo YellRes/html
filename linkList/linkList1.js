@@ -30,13 +30,24 @@ class LinkList {
     getNodeByIndex(index) {
 
     }
+
+    remove(index) {
+        if (index === 0) {
+            let node = this.head
+            if (!node) return null
+            this.head = node.next
+            return node
+        } 
+    }
 }
 
-const ll = new LinkList()
+module.exports = LinkList
 
-ll.add(10)
-ll.add(9)
-ll.add(1, 4)
-ll.add(2, 6)
+// const ll = new LinkList()
 
-console.dir(ll, {depth: 1000})
+// ll.add(10)
+// ll.add(9)
+// ll.add(1, 4)
+// ll.add(2, 6)
+
+// console.dir(ll, {depth: 1000})
