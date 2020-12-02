@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .child{
+      background: cyan;
+      flex-basis: 44%;
+    }
+
+    .child:nth-child(2n + 1) {
+      margin-right: 24px;
+    }
+
+    .child:nth-child(n + 3) {
+      margin-top: 24px;
+    }
+
+    .parent{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 300px;
+      width: 800px;
+      border: 1px solid #1890ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+  </div>
+</body>
+</html>

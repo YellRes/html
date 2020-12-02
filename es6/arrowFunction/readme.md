@@ -5,6 +5,10 @@
 2. 使用的时候关注父作用域的this
 3. 作为无复杂逻辑 或无副作用情况下, 用作匿名函数。 例如 map, forEach, reduce
 
+
+**class中的箭头函数**
+
+
 参考链接：
 [https://jingsam.github.io/2016/12/08/things-you-should-know-about-arrow-functions.html](https://jingsam.github.io/2016/12/08/things-you-should-know-about-arrow-functions.html)
 

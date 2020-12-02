@@ -1,4 +1,5 @@
 /**index.wxss**/
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -18,4 +19,48 @@
 
 .usermotto {
   margin-top: 200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.padding_30 {
+  padding: 30rpx;
+}
+
+.container_left {
+  flex: 1;
+  height: 100%;
+
+}
+
+.container_right {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg_grey {
+  background: grey;
+}
+
+.bg_orange {
+  background: orange;
+}
+
+.bg_pink {
+  background: pink;
+}
+
+.container_right_top {
+  flex: 1;
+}
+
+
+.container_right_bottom {
+  flex: 1;
 }

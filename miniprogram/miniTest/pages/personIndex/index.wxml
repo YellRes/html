@@ -1,0 +1,7 @@
+<view class="person_container">
+
+    <view class="personIndex_container"  wx:for="{{11}}" >
+      {{item}}
+    </view>
+
+</view>

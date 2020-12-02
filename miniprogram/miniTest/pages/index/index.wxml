@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<view class=" container">
   <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -11,15 +11,21 @@
     <text class="user-motto">{{motto}}</text>
   </view> -->
 
-  <button bindtap="getPicDownload">生成图片(wx.downloadFile)</button>
-  <button bindtap="getPicImage">生成图片(getImageInfo)</button>
-
-  <canvas 
-    type="2d"
-    canvas-id="myCanvas">
-  </canvas>
-
-  <view bindtap="getPicImage">
-    保存图片
+ 
+  <view class=" container_left bg_grey">
+    <button bindtap="toLogin">
+      login
+    </button>
   </view>
+
+  <view class="container_right">
+    <view class="container_right_top bg_orange">
+      
+    </view>
+
+    <view class="container_right_bottom bg_pink">
+      
+    </view>
+  </view>
+
 </view>

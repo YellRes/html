@@ -29,14 +29,14 @@
 // ================= 箭头函数
 
 let a = {
-    value: '我是个对象',
+    value: '对象',
     success: function (val){
         console.log(77, this);
     }
 }
 
 let b = {
-    value: '我是个对象',
+    value: '对象',
     success: (val) => {
         console.log(88, this);
     }

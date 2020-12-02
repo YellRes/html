@@ -6,3 +6,12 @@
 .log-item {
   margin: 10rpx;
 }
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.child {
+
+}

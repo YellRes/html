@@ -1,6 +1,17 @@
 <!--logs.wxml-->
 <view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
+  <!-- <block wx:for="{{logs}}" wx:for-item="log">
     <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+  </block> -->
+
+  <button bindtap="toLogin">
+    获取权限
+  </button>
+
+  <view class="parent">
+    <view class="child">车辆整洁</view>
+    <view class="child">帮提行李</view>
+    <view class="child">服务态度好</view>
+    <view class="child">准时到达</view>
+  </view>
 </view>
