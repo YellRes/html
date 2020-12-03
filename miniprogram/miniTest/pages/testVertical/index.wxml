@@ -1,0 +1,25 @@
+<wxs module="foo">
+  function getArrObjProperty(arr) {
+   var result = []
+
+   for (var i = 0; i < arr.length; i++) {
+     console.log(arr[i].name)
+     result.push(arr[i].name)
+   }
+
+   return result
+
+  }
+
+  module.exports = {
+    getArrObjProperty: getArrObjProperty
+  };
+</wxs>
+
+<view class="aa">
+    <citySelectItem 
+        wx:for="{{cityArr}}"
+        wx:key="{{index}}"
+        cityPrefix="{{item.prefix}}"
+        cityArr="{{foo.getArrObjProperty(item.cities)}}" />
+</view>

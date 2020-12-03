@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/personIndex/index"
+    "pages/personIndex/index",
+    "pages/testVertical/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -24,6 +25,10 @@
       {
         "pagePath": "pages/personIndex/index",
         "text": "我的"
+      },
+      {
+        "pagePath": "pages/testVertical/index",
+        "text": "测试页面"
       }
     ]
   },
