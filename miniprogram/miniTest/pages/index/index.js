@@ -202,6 +202,7 @@ Page({
 
   // 去登陆
   toLogin() {
+
     wx.login({
       success: (res) => {
         console.log(res, 'successsuccesssuccesssuccess');
@@ -210,7 +211,12 @@ Page({
         console.log(res, 'completecompletecompletecomplete');
       }
     })
-  }
+    
+  },
+
+
+  // 判断是否登录
+  
 
 
 })

@@ -1,3 +1,21 @@
+<wxs module="foo">
+  function getArrObjProperty(arr) {
+   var result = []
+
+   for (var i = 0; i < arr.length; i++) {
+     console.log(arr[i].name)
+     result.push(arr[i].name)
+   }
+
+   return result
+
+  }
+
+  module.exports = {
+    getArrObjProperty: getArrObjProperty
+  };
+</wxs>
+
 <!--logs.wxml-->
 <view class="container log-list">
   <!-- <block wx:for="{{logs}}" wx:for-item="log">
@@ -8,10 +26,26 @@
     获取权限
   </button>
 
-  <view class="parent">
+  <!-- <view class="parent">
     <view class="child">车辆整洁</view>
     <view class="child">帮提行李</view>
     <view class="child">服务态度好</view>
     <view class="child">准时到达</view>
+  </view> -->
+  <button bindtap="getSystemInfo">获取设备信息</button>
+  <view wx:for="{{systemInfo}}">
+    <text class="" >{{index}}: {{item}}</text>
   </view>
+
+  <view  class="aa">
+     
+        <citySelectItem 
+          wx:for="{{cityArr}}"
+          wx:key="{{index}}"
+          class="bb"
+          cityPrefix="{{item.prefix}}"
+          cityArr="{{foo.getArrObjProperty(item.cities)}}" />
+  </view>
+
+
 </view>
