@@ -36,3 +36,17 @@ readable.on('data', data => process.stdout.write(data))
 readable.on('end', () => process.stdout.write('DONE'))
 
 //https://www.barretlee.com/blog/2017/06/06/dive-to-nodejs-at-stream-module/
+
+const fs = require('fs')
+const path = require('path')
+
+let rs = fs.createReadStream(path.join(__dirname, '1to10.txt'), {
+  highWaterMark: 3
+})
+
+rs.on('readable', data => {
+    rs.read(3)
+    console.log(rs._readableState.length);
+})
+
+
