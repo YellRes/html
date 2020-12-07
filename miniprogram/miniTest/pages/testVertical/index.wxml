@@ -16,10 +16,20 @@
   };
 </wxs>
 
-<view class="aa">
+<view class="">
     <!-- <citySelectItem 
         wx:for="{{cityArr}}"
         wx:key="{{index}}"
         cityPrefix="{{item.prefix}}"
         cityArr="{{foo.getArrObjProperty(item.cities)}}" /> -->
+  <button bindtap="toDownload">
+    下载
+  </button>
+  <view class="progress_box" hover-class="none" hover-stop-propagation="false">
+    <progress 
+      class="" percent="{{progress}}" show-info="true" 
+       color="#10AEFF" active stroke-width="3" >
+
+    </progress>
+  </view>
 </view>
