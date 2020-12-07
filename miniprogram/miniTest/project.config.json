@@ -32,9 +32,11 @@
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true
+    "minifyWXSS": true,
+    "bundle": false
   },
   "compileType": "miniprogram",
   "libVersion": "1.9.4",
@@ -66,8 +68,9 @@
           "scene": null
         },
         {
-          "name": "pages/testVertical/index",
-          "pathName": "pages/testVertical/index",
+          "name": "pages/personIndex/index",
+          "pathName": "pages/personIndex/index",
+          "query": "",
           "scene": null
         }
       ]

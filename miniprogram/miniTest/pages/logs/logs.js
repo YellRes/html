@@ -6,6 +6,7 @@ Page({
     logs: [],
     systemInfo: [],
     prefix: 'A',
+    scrollToPrefix: '',
     cityArr: [{
       "prefix": "A",
       "cities": [{
@@ -1625,7 +1626,33 @@ Page({
         "enabled": "1",
         "searchName": "桃源站-tyz-taoyuanzhan",
         "city": "桃源站"
+      }, {
+
       }]
+    }, {
+      "prefix": "B",
+      "cities": []
+    }, {
+      "prefix": "C",
+      "cities": []
+    }, {
+      "prefix": "D",
+      "cities": []
+    }, {
+      "prefix": "E",
+      "cities": []
+    }, {
+      "prefix": "F",
+      "cities": []
+    }, {
+      "prefix": "G",
+      "cities": []
+    }, {
+      "prefix": "H",
+      "cities": []
+    }, {
+      "prefix": "I",
+      "cities": []
     }]
   },
   onLoad: function () {
@@ -1665,5 +1692,12 @@ Page({
         }
       })
     }).catch(err => err)
+  },
+
+  toSelectCity(e) {
+    const clickePrefix = e.target.dataset.index
+    this.setData({
+      scrollToPrefix: clickePrefix
+    })
   }
 })

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      background: orange;
+      overflow: auto;
+    }
+
+    .child {
+      width: 200px;
+      height: 100px;
+      background: cyan;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .parent2 {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      border: 2px solid red;
+      background: orange;
+      overflow: auto;
+    }
+
+    .parent3 {
+      display: inline-flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 350px;
+      background: orange;
+    }
+
+    .parent4 {
+      display: inline-flex;
+      writing-mode: vertical-lr;
+      flex-wrap: wrap;
+      height: 350px;
+      background: orange;
+    }
+    .child {
+      width: 200px;
+      height: 100px;
+      background: cyan;
+      margin-right: 20px;
+      flex-shrink: 0;
+      writing-mode: horizontal-tb;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="parent">
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+  </div>
+
+  <div class="parent2">
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+  </div>
+
+  <div class="parent3">
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+  </div>
+
+  <div class="parent4">
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+    <div class="child">1</div>
+  </div>
+ 
+</body>
+</html>

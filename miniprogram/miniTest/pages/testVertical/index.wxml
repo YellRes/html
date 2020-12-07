@@ -17,9 +17,9 @@
 </wxs>
 
 <view class="aa">
-    <citySelectItem 
+    <!-- <citySelectItem 
         wx:for="{{cityArr}}"
         wx:key="{{index}}"
         cityPrefix="{{item.prefix}}"
-        cityArr="{{foo.getArrObjProperty(item.cities)}}" />
+        cityArr="{{foo.getArrObjProperty(item.cities)}}" /> -->
 </view>
