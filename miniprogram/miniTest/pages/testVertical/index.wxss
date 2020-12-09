@@ -1,3 +1,8 @@
+Page{
+  box-sizing: border-box;
+}
+
+
 .aa {
     display: flex;
     flex-direction: row;
@@ -5,25 +10,24 @@
 }
 
 .coupon_center--container {
-    height: 100vh;
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ECF0F4;
 }
 
 .coupon_center--wrapper {
-    display: flex;
-    align-items: center;
-   
-    flex-wrap: nowrap;
-    overflow: auto;
-    height: 100vh;
-}
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+  height: 80vh;
+  background: #fff;
+  overflow-y: hidden;
 
-.coupon_center--item {
-    display: flex;
-    flex-shrink: 0;
-    height: 80%;
-    margin: 40rpx 20rpx;
-    background: #ECF0F4;
-    width: 20%;
 }
 
 /* .coupon_center--item:nth-child(first-child) {
@@ -33,5 +37,55 @@
 .coupon_center--item:nth-child(last-child) {
     margin-right: 40rpx;
 } */
+
+
+
+.order_nav {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .order_in_three_month {
+    flex: 1;
+    background: cyan;
+    margin-right: 1.8519vh;
+  }
+  
+  .all_order {
+    flex: 1;
+    background: orange;
+  }
+  
+  .fill_area {
+    flex: 2;
+  }
+  
+  .personal_info {
+    flex: 1;
+    background: cyan;
+  }
+
+  .person {
+  }
+
+
+.border_radius_normal {
+  border-radius: 15rpx;
+}
+
+.border_radius_small {
+  border-radius: 10rpx;
+}
+
+.coupon_item_setting {
+  width: 20%;
+  height: 80%;
+  flex-shrink: 0;
+  margin-right: 2.8519vh;
+}
+
+.coupon_item_setting:nth-child(1) {
+  margin-left: 2.8519vh;
+}
 
 

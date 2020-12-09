@@ -76,6 +76,12 @@
         {
           "name": "pages/testVertical/index",
           "pathName": "pages/testVertical/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/personIndex/index",
+          "pathName": "pages/personIndex/index",
           "scene": null
         }
       ]

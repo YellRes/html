@@ -1,0 +1,21 @@
+<view class="coupon_center--item border_radius_normal" >
+    <view class="" >
+      <view class="item_top_amount" >
+        ￥{{price}}    
+        <view class="item_top_tag" >
+          {{type}}
+        </view>
+      </view>
+  
+    <view class="item_center" >
+      <view>领取后{{limitDay}}日内有效</view>
+      <view>
+        满{{limitPrice}}元可用
+      </view>  
+    </view>
+    </view>
+    
+    <view class="item_bottom border_radius_small {{isReceive ? 'color_btn_blue' : 'color_btn_white color_font_black'}}" >
+      {{isReceive ?  '去下单': '领取'}}
+    </view>
+  </view>

@@ -22,37 +22,18 @@
         wx:key="{{index}}"
         cityPrefix="{{item.prefix}}"
         cityArr="{{foo.getArrObjProperty(item.cities)}}" /> -->
-  <view class="coupon_center--wrapper" hover-class="none" hover-stop-propagation="false">
-    <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
-      <view class="" hover-class="none" hover-stop-propagation="false">
-        ￥5 车主专享
-      </view>
 
-      <view class="" hover-class="none" hover-stop-propagation="false">
-        
-      </view>
 
-      <view class="" hover-class="none" hover-stop-propagation="false">
-        
-      </view>
-    </view>
-     <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
-      
-    </view>
-     <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
-      
-    </view>
-     <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
-      
-    </view>
-     <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
-      
-    </view>
-     <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
-      
-    </view>
-     <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
-      
-    </view>
+
+  <view class="coupon_center--wrapper border_radius_normal" >
+    
+    <couponItem class="coupon_item_setting" isReceive="{{true}}"/>
+    <couponItem class="coupon_item_setting" isReceive="{{false}}"/>
+    <couponItem class="coupon_item_setting"/>
+    <couponItem class="coupon_item_setting"/>
+    <couponItem class="coupon_item_setting"/> 
+    <couponItem class="coupon_item_setting"/> 
+    <couponItem class="coupon_item_setting"/> 
+   
   </view>
 </view>

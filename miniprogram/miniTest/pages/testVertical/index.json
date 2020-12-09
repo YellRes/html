@@ -1,6 +1,6 @@
 {
     "navigationBarTitleText": "查看启动日志",
     "usingComponents": {
-      "citySelectItem": "../../component/cityselectitem"
+      "couponItem": "../../component/couponitem"
     }
   }
