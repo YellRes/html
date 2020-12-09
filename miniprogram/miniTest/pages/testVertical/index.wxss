@@ -3,3 +3,35 @@
     flex-direction: row;
     overflow: auto;
 }
+
+.coupon_center--container {
+    height: 100vh;
+}
+
+.coupon_center--wrapper {
+    display: flex;
+    align-items: center;
+   
+    flex-wrap: nowrap;
+    overflow: auto;
+    height: 100vh;
+}
+
+.coupon_center--item {
+    display: flex;
+    flex-shrink: 0;
+    height: 80%;
+    margin: 40rpx 20rpx;
+    background: #ECF0F4;
+    width: 20%;
+}
+
+/* .coupon_center--item:nth-child(first-child) {
+    margin-left: 40rpx;
+}
+
+.coupon_center--item:nth-child(last-child) {
+    margin-right: 40rpx;
+} */
+
+

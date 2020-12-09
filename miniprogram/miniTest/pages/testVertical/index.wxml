@@ -16,20 +16,43 @@
   };
 </wxs>
 
-<view class="">
+<view class="coupon_center--container">
     <!-- <citySelectItem 
         wx:for="{{cityArr}}"
         wx:key="{{index}}"
         cityPrefix="{{item.prefix}}"
         cityArr="{{foo.getArrObjProperty(item.cities)}}" /> -->
-  <button bindtap="toDownload">
-    下载
-  </button>
-  <view class="progress_box" hover-class="none" hover-stop-propagation="false">
-    <progress 
-      class="" percent="{{progress}}" show-info="true" 
-       color="#10AEFF" active stroke-width="3" >
+  <view class="coupon_center--wrapper" hover-class="none" hover-stop-propagation="false">
+    <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
+      <view class="" hover-class="none" hover-stop-propagation="false">
+        ￥5 车主专享
+      </view>
 
-    </progress>
+      <view class="" hover-class="none" hover-stop-propagation="false">
+        
+      </view>
+
+      <view class="" hover-class="none" hover-stop-propagation="false">
+        
+      </view>
+    </view>
+     <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
+      
+    </view>
+     <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
+      
+    </view>
+     <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
+      
+    </view>
+     <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
+      
+    </view>
+     <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
+      
+    </view>
+     <view class="coupon_center--item" hover-class="none" hover-stop-propagation="false">
+      
+    </view>
   </view>
 </view>
