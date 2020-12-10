@@ -1,0 +1,46 @@
+<!-- 测试上传服务器地址 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form 
+        action="http://localhost:3002/users/uploadFile"
+        enctype="multipart/form-data"
+        method="POST">
+        <input type="file" name="file" id="imgLocal"/>
+        <input type="submit" value="提交"></input>
+    </form>
+    <img src="" alt="" id="imgSelected">
+
+    <script>
+        let inp = document.querySelector('#imgLocal')
+        let img = document.querySelector('#imgSelected')
+
+        const formData = new FormData()
+
+        formData.append('userName', "yellres")
+        formData.append('accountnum', 123456)
+
+        inp.onchange = function(e) {
+            let fileList = this.files
+            console.log(fileList);
+
+            let file = fileList[0]
+            // 获取base64
+            const fileReader = new FileReader()
+            fileReader.readAsDataURL(file)
+            fileReader.addEventListener('load', function() {
+                let res = fileReader.result
+                img.src = res
+            })
+
+    
+        }
+    </script>
+</body>
+</html>
