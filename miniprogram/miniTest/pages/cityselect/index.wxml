@@ -1,0 +1,57 @@
+<view class="city_select--container" >
+
+  <view class="city_select--left border_radius_normal" >
+    <view class="city_select--input" >
+      {{selectedNum ? selectedNum : '请输入城市首字母'}}
+    </view>
+
+    <view class="city_select--alphabet" >
+      <view 
+        wx:for="{{alphabetArr}}" wx:key="index"
+        data-type="{{item}}"
+        hover-class="tapAlphabet"
+        class="alphabet_item {{}}" bindtap="tapPhone" >
+        {{item}}
+      </view>
+
+      <view 
+        data-type="delete"
+        class="alphabet_item--delete alphabet_item"  
+        hover-class="tapAlphabet" bindtap="tapPhone">
+        删除
+      </view>
+    </view>
+  </view>
+
+  <view class="city_select--right border_radius_normal" >
+    <view class="city_select--hot" >
+      <view class="city_select--title" >
+        热门
+      </view> 
+
+      <view class="city_select_city--container" >
+        <view 
+          wx:for="{{popularCities}}" wx:key="index" 
+          class="city_select_city--item  text_ellipsis border_radius_normal">
+          {{item}}
+        </view>
+      </view>
+    </view>
+
+    <view class="city_select-history" >
+      <view class="" >
+        历史
+      </view>
+
+      <view class="city_select_history--con" hover-class="none" hover-stop-propagation="false">
+        <view 
+          wx:for="{{historyCities}}" wx:key="index"
+          class="text_ellipsis border_radius_normal city_select_city--item margin-right_4 history_cities">
+          {{item}}
+        </view>
+      </view>
+      
+    </view>
+  </view>
+
+</view>

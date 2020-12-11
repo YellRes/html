@@ -1,0 +1,98 @@
+Page {
+  height: 100%;
+  background-color: #151515;
+  color: #fff;
+  justify-content: center;
+}
+
+.order-detail {
+  display: flex;
+  padding: 0 9.0278vh;
+}
+
+.left {
+  font-size: 4.8611vh;
+  position: relative;
+  width: 83.3333vh;
+  padding: 4.4444vh;
+  margin-right: 8.3333vh;
+  box-sizing: border-box;
+  border-radius: 4.1667vh;
+  background-color: #3b3d4f;
+  height: 76.3889vh;
+}
+
+.text-1 {
+  font-size: 6.9444vh;
+  font-weight: 600;
+  margin-bottom: 4.1667vh;
+}
+
+.text-2 {
+  color: #3bb7f1;
+  margin-bottom: 4.1667vh;
+}
+
+.button-box {
+  position: absolute;
+  width: calc(100% - 8.8889vh);
+  bottom: 4.4444vh;
+}
+
+.button {
+  line-height: 13.8889vh;
+  text-align: center;
+  border-radius: 3.4722vh;
+  font-size: 5.5556vh;
+  background-color: #2f303f;
+}
+
+.mb-32px {
+  margin-bottom: 4.4444vh;
+}
+
+.mb-28px {
+  margin-bottom: 3.8889vh;
+}
+
+.right {
+  padding: 4.4444vh;
+  width: calc(100% - 83.3333vh);
+  box-sizing: border-box;
+  background-color: #3b3d4f;
+  border-radius: 4.1667vh;
+}
+
+.time {
+  font-size: 6.9444vh;
+  margin-right: 2.7778vh;
+}
+
+.departure-text {
+  font-size: 4.1667vh;
+  color: #b0b1b8;
+}
+
+.line {
+  height: 0.2778vh;
+  background-color: #b0b1b8;
+}
+
+.right {
+  font-size: 4.8611vh;
+}
+
+.identity-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.adult-ticket {
+  display: inline-block;
+  padding: 0.6944vh 1.3889vh;
+  border-radius: 2.0833vh;
+  display: inline;
+  margin: 0 3.8889vh;
+  border: 0.1389vh solid #b0b1b8;
+}

@@ -1,0 +1,14 @@
+<view class="bus-ticket">
+  <view class="page-top">
+    <view class="left">
+      <view class="select-city">
+        <view class="departure-city">选择出发城市</view>
+        <view class="arrival-city">选择到达城市</view>
+        <view class="switch"><view class="switch-icon">switch</view></view>
+      </view>
+      <view class="to-select-date">选择出发日期</view>
+    </view>
+    <view class="inquire">查询</view>
+  </view>
+  <view class="page-buttom">巴士管家  中国道路运输协会合作伙伴  全国道路客运站互联网售票运营商</view>
+</view>

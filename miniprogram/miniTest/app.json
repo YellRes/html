@@ -1,37 +1,42 @@
 {
-  "pages":[
+  "pages": [
+    "pages/couponcenter/index",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/personIndex/index",
-    "pages/testVertical/index"
+    "pages/bus-ticket/bus-ticket",
+    "pages/select-date/select-date",
+    "pages/myorder/index",
+    "pages/booking-list/booking-list",
+    "pages/order-detail/order-detail",
+    "pages/cityselect/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black",
-    "mossPkgName": "00000"
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "巴士管家",
+    "navigationBarTextStyle": "black",
+    "mossPkgName": "60347"
   },
   "tabBar": {
-    "list":  [
+    "color": "#959CA7",
+    "selectedColor": "#5f9df1",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页"
+        "pagePath": "pages/couponcenter/index",
+        "text": "订单"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
-      },
-      {
-        "pagePath": "pages/personIndex/index",
+        "pagePath": "pages/myorder/index",
         "text": "我的"
       },
       {
-        "pagePath": "pages/testVertical/index",
-        "text": "测试页面"
+        "pagePath": "pages/cityselect/index",
+        "text": "选择城市"
       }
     ]
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
 }

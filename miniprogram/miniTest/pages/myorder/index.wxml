@@ -1,0 +1,81 @@
+<view class="person_order--container">
+
+<!-- TODO: -->
+<!-- 1. 没有登录判断 -->
+<!-- 2. 登录后  -->
+<!-- 2-1. 有数据 -->
+<!-- 2-2. 没有有数据 -->
+  <view class="person_order--nav" >
+    <view 
+      class="order_in_three_month text_center flex_1 text_ellipsis border_radius {{isOrderTypeIn3Month ? 'btn_selected': 'normal_btn'}}" 
+      data-index="threeMonth" bindtap="tapNav">
+      三个月内的订单
+    </view>
+
+    <view 
+      class="all_order text_center flex_1 text_ellipsis border_radius {{isOrderTypeIn3Month ? 'normal_btn' : 'btn_selected'}}" 
+      data-index="all" bindtap="tapNav">
+      全部订单
+    </view>
+
+    <view class="flex_gap" >
+      
+    </view>
+
+    <view class="flex_1 text_center avatar_container" >
+      <image class="avatar_sizing" src="https://image.chebada.com/image/xiaochengxu/v640/icon_logo_caocao.png" mode="" lazy-load="false" binderror="" bindload="">
+        
+      </image> 
+      <view class="person_name" hover-class="none" hover-stop-propagation="false">
+        jnxh768
+      </view> 
+       
+    </view>
+
+    <view class="btn_selected text_center flex_half border_radius">
+      退出 
+    </view>
+  </view>
+
+  <view class="person_order-content" >
+    <orderItem class="content_item"/>
+    <orderItem class="content_item"/>
+    <orderItem class="content_item"/>
+    <orderItem class="content_item"/>
+
+    <!-- <view class="empty_state" >
+      <view class="" >
+        
+      </view>
+      
+      <view class="" >
+        <view class="no_order" >
+          暂无订单 
+        </view>
+
+        <view class="get_coupon_btn" >
+          去领券下单
+        </view>
+      </view>
+    </view> -->
+
+
+    <!-- <view class="empty_state" >
+      <view class="" >
+        
+      </view>
+      
+      <view class="" >
+        <view class="no_order" >
+          登录可查看更多
+        </view>
+
+        <view class="get_coupon_btn" >
+          立即登录
+        </view>
+      </view>
+    </view> -->
+
+
+  </view>
+</view>

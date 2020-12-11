@@ -1,0 +1,134 @@
+Page {
+  box-sizing: border-box;
+}
+
+.city_select--container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-color: #151515;
+  color: #fff;
+  box-sizing: border-box;
+
+}
+
+.city_select--left {
+  flex: 3;
+  display: flex;
+  background-color: #3b3d4f;
+  flex-direction: column;
+  height: 90vh;
+  padding: 2vh 4.17vh;
+  box-sizing: border-box;
+  margin-right: 5.69vh;
+
+}
+
+.border_radius_normal {
+  border-radius: 15rpx;
+}
+
+.city_select--input {
+  font-size: 7.17vh;
+  font-weight: bold;
+  background-color: #2f303f;
+  border-radius: 12px ;
+  padding: 2vh 3vh;
+  margin-bottom: 3.47vh;
+}
+
+.city_select--alphabet {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  font-size: 7.17vh;
+  grid-gap: 2.08vh;
+}
+
+.alphabet_item {
+  background: #626372;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.tapAlphabet {
+  border: 1.58vh solid #3bc1ff;
+}
+
+.alphabet_item--delete {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 4;
+}
+
+/* .city_select--container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+} */
+
+.city_select--right {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background-color: #3b3d4f;
+  font-size: 6.17vh;
+  padding: 4.86vh;
+  box-sizing: border-box;
+}
+
+.city_select--hot {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.city_select_city--container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);`
+  grid-template-rows: repeat(2, 13.89vh);
+  grid-gap: 4.17vh;
+  margin: 4.17vh 0;
+
+}
+
+.city_select_city--item {
+  background-color: #2f303f;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  line-height: 13.89vh;
+  padding: 0 4.17vh;
+  box-sizing: border-box;
+}
+
+.city_select-history {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.text_ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.city_select_history--con {
+  margin-top: 3.47vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex: 1;
+}
+
+.margin-right_4 {
+  margin-right: 4.17vh;
+}
+
+

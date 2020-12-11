@@ -1,0 +1,500 @@
+/*字体*/
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-17 {
+  font-size: 17px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+/*字色*/
+.fc-green {
+  color: #479EE3;
+}
+
+.fc-black {
+  color: #333;
+}
+
+.fc-semi {
+  color: #353535;
+}
+
+.fc-white {
+  color: #ffffff;
+}
+
+.fc-grey {
+  color: #999999;
+}
+.fc-grey__6 {
+  color: #666;
+}
+.fc-grey__c {
+  color: #ccc;
+}
+.fc-light {
+  color: #b2b2b2;
+}
+
+.fc-blue {
+  color: #479EE3;
+}
+
+.fc-red {
+  color: #ed4e77;
+}
+
+.fc-red.hover {
+  color: rgba(230, 67, 64, 0.2);
+}
+
+.fc-red.disabel {
+  color: rgba(230, 67, 64, 0.1);
+}
+
+.fc-green.hover {
+  color: rgba(9, 198, 7, 0.2);
+}
+
+.fc-green.disabel {
+  color: rgba(230, 67, 64, 0.1);
+}
+
+.fc-blue.hover {
+  color: rgba(87, 107, 149, 0.2);
+}
+
+.fc-blue.disabel {
+  color: rgba(87, 107, 149, 0.1);
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.ta-c {
+  text-align: center;
+}
+.ta-l {
+  text-align: left;
+}
+.ta-r {
+  text-align: right;
+}
+.fr{
+  float: right;
+}
+.mt-5{
+  margin-top: 5px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mt-15{
+  margin-top: 15px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.ml-5{
+  margin-left: 5px;
+}
+.ml-10{
+  margin-left: 10px;
+}
+.mr-10{
+  margin-right: 10px;
+}
+.mt-5{
+  margin-top: 5px;
+}
+.mb-5{
+  margin-bottom: 5px;
+}
+.mt-15{
+  margin-top: 15px;
+}
+.border{
+  border:1px #e5e5e5 solid;
+}
+.border-t{
+  border-top:1rpx #e5e5e5 solid;
+}
+.border-b{
+  border-bottom:1rpx #e5e5e5 solid;
+}
+.border-r{
+  border-right:1px #e5e5e5 solid;
+}
+.border-l{
+  border-left:1px #e5e5e5 solid;
+}
+
+.bg-white{
+  background: #fff;
+}
+
+
+.input-cell {
+  background: #ffffff;
+  color: #666;
+  font-size: 14px;
+  padding: 10px 15px;
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.input-cell .title {
+  width: 85px;
+  display: block;
+  word-wrap: break-word;
+  word-break: break-all;
+  line-height: 24px;
+  margin-right: 5px;
+}
+
+.input-cell .delete {
+  margin-top: 4px;
+}
+
+.input-cell input {
+  line-height: 24px;
+  height: 24px;
+  min-height: 24px;
+}
+
+.input-cell .content {
+  -webkit-box-flex: 1;
+  line-height: 24px;
+  height: 24px;
+  display: block;
+}
+
+.input-cell input::-webkit-input-placeholder {
+  color: #b2b2b2;
+}
+
+.flex, .flex-box {
+  display: flex;
+}
+
+.flex-1 {
+  -webkit-box-flex: 1;
+}
+
+.one-line{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calendar {
+  width: 100%;
+  margin-bottom: 1px;
+  background-color: #fff;
+  height: 50px;
+  font-size: 14px;
+  color: #479EE3;
+}
+
+.calendar__wrap {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+}
+
+.calenda__prev,
+.calenda__next {
+  padding: 0 15px;
+  flex: 1;
+  text-align: center;
+  line-height: 30px;
+  -webkit-tap-highlight-color: #eeeeee;
+  tap-highlight-color: #eeeeee;
+
+}
+
+.calenda__prev.disable, .calenda__next.disable {
+  color: #d7e4fb;
+}
+
+.calenda__input {
+  flex: 4;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #479EE3;
+
+}
+
+.icon-calenda {
+  width: 15px;
+  height: 16px;
+  background: url(https://img2.hn96606.cn/xiaochengxu/v3/icon_calendar.png) scroll no-repeat;
+  background-size: 100%;
+  float: left;
+  margin: 5px 0 0 15px;
+}
+
+.icon-arrow {
+  width: 12px;
+  height: 7px;
+  background: url(https://img2.hn96606.cn/xiaochengxu/v3/icon_arrow_down.png) scroll no-repeat;
+  background-size: 100%;
+  float: right;
+  margin: 10px 10px 0 0;
+}
+
+/* 底部弹层样式 */
+
+.popup-info-warp{
+  font-size: 13px;
+  color: #666;
+  background: #fff;
+  position: fixed;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  z-index: 990;
+  opacity: 1;
+  box-sizing: border-box;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
+}
+.popup-info-warp.up {
+  opacity: 1;
+  bottom: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.popup-info-warp.up textarea{
+  display: block;
+}
+.popup-info-warp.down {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  opacity: 0;
+  bottom: -10px;
+}
+.popup-info-warp.down textarea{
+  display: none;
+}
+
+.popup-info-warp .popup-info-title{
+  font-size: 16px;
+  margin: 0 15px 5px 15px;
+  border-bottom: 1rpx #cbd1d7 solid;
+  padding: 10px 0;
+  color: #333;
+}
+.popup-info__confirm{
+  color: #479EE3;
+  font-size: 16px;
+  text-align: right;
+  padding: 10px 0;
+  margin: 0 15px 0 0
+}
+.popup-info-warp .popup-item {
+  padding: 5px 0;
+  margin:0 15px;
+}
+.popup-info-warp .popup-item .popup-item-right{
+  float: right;
+}
+.popup-info__top{
+  display: flex;
+  font-size: 16px;
+}
+.popup-info__top .popup-info__cancel{
+  margin: 0 0 0 15px;
+  color: #666;
+}
+.popup-info__title{
+  text-align: center;
+}
+.popup-info__top view{
+  flex: 1;
+  padding: 10px 0;
+}
+/* 底部弹层样式 */
+
+/* 自定义checkbox */
+.checkbox-custom{
+  background: url(https://img2.hn96606.cn/xiaochengxu/v370/checkbox_res.png) no-repeat;
+  background-size: 100%;
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+}
+.checkbox-custom__checked{
+  background: url(https://img2.hn96606.cn/xiaochengxu/v370/checkbox_sel.png) no-repeat;
+  background-size: 100%;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+
+/* 380新增红包cell */
+.ui-cell-red{
+  padding: 15px 10px;
+  background-color: #fff;
+  position: relative;
+  display:flex;
+  align-items:center;
+  font-size:14px;  
+}
+.ui-cell-red-right:before {
+  content: " ";
+  width:13px;
+  height:16px;
+  display: inline-block;
+  background: url('https://img2.hn96606.cn/xiaochengxu/v380/icon_redbag_nearbyhotel.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:15px;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.ui-cell-red-left{
+  position:relative;
+  flex:1;
+  padding-left: 23px;
+}
+.ui-cell-red-right{
+  text-align:right;
+  font-size:14px;
+  margin-right:15px;
+  padding-right:5px;
+  color: #666666;
+}
+.ui-cell-red-right:after {
+  content: " ";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-width: 2px 2px 0 0;
+  border-color: #c1c1c1;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  right: 15px;
+}
+
+/* 带图的cell */
+
+.cm-cell__warp{
+      background: #fff;
+      padding: 0 25rpx;
+      display: flex;
+      height: 120rpx;
+      border-radius: 3px;
+      position: relative;
+      border-top: 1px #dedfe0 solid;
+      border-bottom: 1px #dedfe0 solid;
+    }
+    .cell-content{
+      display: flex;
+      flex: 1;
+      justify-content:space-between;
+      margin-left: 20rpx;
+      margin-right: 40rpx;
+    }
+    .cell-content .name,.cell-content .price{
+      margin: auto 0
+    }
+    .cell-content .name{
+      display: flex;
+      flex-direction: column;
+      font-size: 28rpx;
+      color: #333;
+    }
+    .cell-content .sub-name{
+      font-size: 24rpx;
+      color: #aaa;
+      margin-top: 10rpx;
+    }
+    .cell-content .cell-content__right{
+      margin: auto 0;
+      font-size: 28rpx;
+    }
+    .cm-cell__warp image{
+      width: 60rpx;
+      height: 60rpx;
+      margin: auto;
+    }
+    .cm-cell__warp:after {
+      content: " ";
+      display: inline-block;
+      width: 16rpx;
+      height: 16rpx;
+      border-right: 2rpx solid #a1a1a1;
+      border-top: 2rpx solid #a1a1a1;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+
+      position: absolute;
+      top: 50%;
+      right: 17px;
+      margin-top: -5rpx;
+    }
+    .default-cell{
+      height: auto;
+      padding: 20rpx 25rpx;
+    }
+    .default-cell  .cell-content{
+      margin: 0 10rpx;
+    }
+    .default-cell:after{
+      display: none;
+    }
+  
+/* 带图的cell end */
+
+.addBackIcon{
+    width: 106rpx;
+    height: 106rpx;
+    background:url(https://img2.hn96606.cn/xiaochengxu/btn_Home_top.png) no-repeat;
+    background-size: 106rpx 106rpx;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}

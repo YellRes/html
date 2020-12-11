@@ -1,0 +1,19 @@
+<view class="select-date">
+  <view class="tab-bar">
+    <view class="tab-box {{selectMonthIndex == index ? 'selected' : ''}}" wx:for="{{dates}}" wx:key="index" wx:for-index="index" data-index="{{index}}" data-item="{{item}}" bindtap="selectMonth">
+      <view class="tab">
+      {{item.showDate}}
+    </view>
+    </view>
+  </view>
+  <view class="calendar">
+    <view class="week-box">
+      <view class="week" wx:for="{{weekDays}}" wx:key="index">{{item}}</view>
+    </view>
+    <view class="calendar-content">
+      <view class="day-box {{item <= 0 || item > monthDayNum ? 'hide' : ''}}" wx:for="{{days}}" wx:for-index="indx" wx:key="index" data-day="{{item}}" bindtap="selectDate">
+        <view class="day {{selectDay == item ? 'active' : ''}}">{{item}}</view>
+      </view>
+    </view>
+  </view>
+</view>

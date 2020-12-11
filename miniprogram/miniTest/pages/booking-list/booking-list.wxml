@@ -1,0 +1,29 @@
+<view class="booking-list">
+  <view class="select-bar">
+    <view class="select-label">发车时段</view>
+    <view class="select {{selectIndex == index ? 'selected' : ''}}" wx:for="{{selectData}}" wx:for-index="index" data-index="{{index}}" wx:key="index" bindtap="selectDate">{{item}}</view>
+  </view>
+
+  <scroll-view scroll-x class="scroll-view">
+  
+    <view class="ticket">
+      <view class="ticket-into">
+        <view class="mb-30px">
+          <text class="time">09:20</text>
+          <text class="departure-text">发车</text>
+        </view>
+
+        <view class="departure-station mb-30px">苏州北广场汽车站南门</view>
+        <view class="arrival-station">南京南站</view>
+      </view>
+
+      <view class="ticket-price">
+        <view>余票3</view>
+        <view>￥60</view>
+      </view>
+    </view>
+
+  </scroll-view>
+  <!-- <view class="no-data">暂无班次可选</view> -->
+
+</view>

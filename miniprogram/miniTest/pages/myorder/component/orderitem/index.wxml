@@ -1,0 +1,31 @@
+<view class="order_item border_radius_15 " >
+  <view class="order_item--desAndArr flex_1 padding_35" >
+    <view class="des_item" >
+      上海汽车总站
+    </view>
+
+    <view class="arrive_item" hover-class="" hover-stop-propagation="false">
+      南京南站
+    </view>
+  </view>
+
+  <view class="order_item--date flex_1 padding_35" >
+    <view class="" >
+      2020-12-24
+    </view>
+
+    <view class="" >
+      09:20
+    </view>
+  </view>
+
+  <view class="order_item--price flex_1  padding_35" >
+    <view class="" >
+      出票成功
+    </view>
+
+    <view class="" >
+      ￥60
+    </view>
+  </view>
+</view>

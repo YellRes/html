@@ -1,0 +1,17 @@
+
+<!-- 1. 是否登录 -->
+
+<view class="coupon_center--container">
+
+  <view class="coupon_center--wrapper border_radius_normal" >
+    
+    <couponItem class="coupon_item_setting" isReceive="{{true}}"/>
+    <couponItem class="coupon_item_setting" isReceive="{{false}}"/>
+    <couponItem class="coupon_item_setting"/>
+    <couponItem class="coupon_item_setting"/>
+    <couponItem class="coupon_item_setting"/> 
+    <couponItem class="coupon_item_setting"/> 
+    <couponItem class="coupon_item_setting"/> 
+   
+  </view>
+</view>

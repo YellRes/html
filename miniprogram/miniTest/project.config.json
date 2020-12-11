@@ -29,26 +29,27 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
+    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true,
-    "bundle": false
+    "minifyWXSS": true
   },
   "compileType": "miniprogram",
   "libVersion": "1.9.4",
   "appid": "wx6e3d862a0d0d0bbc",
   "projectname": "miniTest",
+  "cloudfunctionTemplateRoot": "",
+  "watchOptions": {
+    "ignore": []
+  },
   "debugOptions": {
     "hidedInDevtools": []
   },
   "scripts": {},
-  "isGameTourist": false,
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
   "condition": {
     "plugin": {
       "list": []
@@ -82,6 +83,12 @@
         {
           "name": "pages/personIndex/index",
           "pathName": "pages/personIndex/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cityselect/index",
+          "pathName": "pages/cityselect/index",
           "scene": null
         }
       ]

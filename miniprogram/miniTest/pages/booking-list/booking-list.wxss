@@ -1,0 +1,86 @@
+Page {
+  height: 100%;
+  background-color: #151515;
+  justify-content: center;
+  padding-left: 8.3333vh;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.select-bar {
+  display: flex;
+  line-height: 13.4722vh;
+  margin-bottom: 5.5556vh;
+}
+
+.select-label {
+  font-size: 6.9444vh;
+  font-weight: 600;
+  margin-right: 4.1667vh;
+}
+
+.select {
+  margin-right: 4.1667vh;
+  width: 44.4444vh;
+  text-align: center;
+  font-size: 4.1667vh;
+  border-radius: 2.0833vh;
+  background-color: #3b3d4f;
+}
+
+.scroll-view {
+  /* width: 100%; */
+  white-space: nowrap;
+}
+
+.ticket {
+  display: inline-block;
+  width: 68.0556vh;
+  border-radius: 4.1667vh;
+  overflow: hidden;
+  margin-right: 9.0278vh;
+}
+
+.ticket-into {
+  padding: 4.8611vh;
+  font-size: 5.2778vh;
+  height: 41.6667vh;
+  box-sizing: border-box;
+  background-color: #3b3d4f;
+}
+
+.ticket-into .time {
+  font-size: 6.9444vh;
+  font-weight: 600;
+  margin-right: 2.7778vh;
+}
+
+.departure-text {
+  font-size: 4.1667vh;
+  color: #93959e;
+}
+
+.ticket-price {
+  display: flex;
+  background-color: #373842;
+  justify-content: space-between;
+  line-height: 13.8889vh;
+  font-size: 5.8333vh;
+  padding: 0 4.8611vh;
+}
+
+.selected {
+  background-color: #3bc1ff;
+  color: #fff;
+}
+
+.no-data {
+  line-height: 55.5556vh;
+  text-align: center;
+  font-size: 8.3333vh;
+  font-weight: 600;
+}
+
+.mb-30px {
+  margin-bottom: 4.1667vh;
+}

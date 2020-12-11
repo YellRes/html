@@ -1,0 +1,110 @@
+Page {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #151515;
+}
+.bus-ticket {
+  background-color: #3b3d4f;
+  padding: 5.5556vh;
+  width: calc(100% - 18.0556vh);
+  box-sizing: border-box;
+  border-radius: 6.9444vh;
+}
+
+.page-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% - 63.8889vh);
+}
+
+.departure-city,.arrival-city {
+  background-color: #2f303f;
+  width: calc(50% - 4.1667vh);
+  height: 23.3333vh;
+  line-height: 23.3333vh;
+  text-align: center;
+  font-size: 6.9444vh;
+  color: #b2b4bd;
+  font-weight: 600;
+}
+
+.departure-city {
+  border-bottom-right-radius: 23.3333vh;
+  border-top-right-radius: 23.3333vh;
+  border-top-left-radius: 6.9444vh;
+  border-bottom-left-radius: 6.9444vh;
+}
+
+.arrival-city {
+  border-bottom-left-radius: 23.3333vh;
+  border-top-left-radius: 23.3333vh;
+  border-top-right-radius: 6.9444vh;
+  border-bottom-right-radius: 6.9444vh;
+}
+
+.select-city {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 21.25vh;
+  height: 21.25vh;
+  text-align: center;
+  background-color: #3b3d4f;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.switch-icon {
+  width: 15.2778vh;
+  height: 15.2778vh;
+  line-height: 15.2778vh;
+  border-radius: 50%;
+  background-color: #838691;
+}
+
+.inquire {
+  color: #fff;
+  font-size: 6.9444vh;
+  font-weight: 600;
+  width: 59.7222vh;
+  height: 51.3889vh;
+  line-height: 51.3889vh;
+  border-radius: 2.0833vh;
+  background-color: #3bc1ff;
+  text-align: center;
+}
+
+.to-select-date {
+  height: 23.3333vh;
+  line-height: 23.3333vh;
+  border-radius: 6.9444vh;
+  text-align: center;
+  font-size: 6.9444vh;
+  background-color: #2f303f;
+  color: #b2b4bd;
+  font-weight: 600;
+}
+
+.page-buttom {
+  padding-top: 5.5556vh;
+  font-size: 5.5556vh;
+  color: #dcdde1;
+  text-align: center;
+}

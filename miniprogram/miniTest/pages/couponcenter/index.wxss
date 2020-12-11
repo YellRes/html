@@ -1,0 +1,45 @@
+
+Page{
+  box-sizing: border-box;
+}
+
+.coupon_center--container {
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #151515;
+  color: #fff;
+}
+
+.coupon_center--wrapper {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+  height: 80vh;
+  background: #3b3d4f;
+  overflow-y: hidden;
+
+}
+
+.border_radius_normal {
+  border-radius: 15rpx;
+}
+
+.border_radius_small {
+  border-radius: 10rpx;
+}
+
+.coupon_item_setting {
+  width: 24%;
+  height: 80%;
+  flex-shrink: 0;
+  margin-right: 2.8519vh;
+}
+
+.coupon_item_setting:nth-child(1) {
+  margin-left: 2.8519vh;
+}

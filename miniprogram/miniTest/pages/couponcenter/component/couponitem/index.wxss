@@ -1,0 +1,64 @@
+.coupon_center--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  background: #2f303f;
+  font-size: 1.8519vh;
+  box-sizing: border-box;
+  padding: 4.7778vh;
+  height: 100%;
+}
+
+
+
+.item_top_amount {
+  font-size: 5.8519vh;
+  font-weight: bold;
+  display: flex;
+}
+
+.item_top_tag {
+  font-size: 2.3889vh;
+  border: 0.0926vh solid #fff;
+  margin-left: 0.9259vh;
+  align-self: center;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.item_center {
+  font-size: 3.3148vh;
+  margin-top: 4.6296vh;
+}
+
+.item_bottom {
+  color: #fff;
+  text-align: center;
+  height: 14.2429vh;
+  line-height: 14.2429vh;
+  font-size: 4.6296vh;
+  font-weight: border;
+}
+
+.color_btn_blue {
+  background-color: #3bc1ff;
+
+}
+
+.color_btn_white {
+  background-color: #3b3d4f;
+}
+
+.color_font_black {
+  color: #fff;
+}
+
+
+.border_radius_normal {
+  border-radius: 15rpx;
+}
+
+.border_radius_small {
+  border-radius: 10rpx;
+}

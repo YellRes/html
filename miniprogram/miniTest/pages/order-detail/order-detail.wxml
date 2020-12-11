@@ -1,0 +1,41 @@
+<view class="order-detail">
+  <view class="left">
+    <view class="text-1">出票成功</view>
+    <view class="text-2">联系客服</view>
+    <!-- <view class="tip">票款将在0-7个工作日内原路返回</view> -->
+    <view class="button-box">
+      <view class="button mb-32px">改签/退票</view>
+      <view class="button">再次预定</view>
+    </view>
+  </view>
+
+  <view class="right">
+    <view class="mb-28px">
+      <text class="time">2020-12-24 08:20</text>
+      <text class="departure-text">发车</text>
+    </view>
+
+    <view class="departure-station mb-28px">苏州广场汽车站</view>
+    <view class="arrival-station mb-28px">南京南站</view>
+    <view class="line mb-28px"></view>
+    
+
+    <view class="identity-info">
+      <view class="mb-28px">
+        <text>东厂具</text>
+        <text class="adult-ticket">成人票</text>
+        <text>320***********2123</text>
+      </view>
+      <view class="mb-28px">
+        <text>东厂具</text>
+        <text class="adult-ticket">成人票</text>
+        <text>320***********2123</text>
+      </view>
+      <view class="mb-28px">
+        <text>东厂具</text>
+        <text class="adult-ticket">成人票</text>
+        <text>320***********2123</text>
+      </view>
+    </view>
+  </view>
+</view>
