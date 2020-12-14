@@ -15,7 +15,9 @@
     </view>
     </view>
     
-    <view class="item_bottom border_radius_small {{isReceive ? 'color_btn_blue' : 'color_btn_white color_font_black'}}" >
+    <button 
+      open-type="getPhoneNumber"  bindgetphonenumber="getPhoneNumber" 
+      class="item_bottom border_radius_small {{isReceive ? 'color_btn_blue' : 'color_btn_white color_font_black'}}" >
       {{isReceive ?  '去下单': '领取'}}
-    </view>
+    </button>
   </view>

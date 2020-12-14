@@ -25,6 +25,19 @@ Component({
       type: String,
       value: '车主专享',
     }
+  },
 
+  methods: {
+    getPhoneNumber(e) {
+      // wx.login({
+      //   complete: (res) => {
+      //     console.log(res, 'completecompletecomplete');
+      //   }
+      // })
+      console.log(e.detail.errCode) 
+      console.log(e.detail.iv) 
+      console.log(e.detail.encryptedData) 
+
+    }
   }
 })

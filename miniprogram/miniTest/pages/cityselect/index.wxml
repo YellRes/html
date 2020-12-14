@@ -33,7 +33,9 @@
         <view 
           wx:for="{{popularCities}}" wx:key="index" 
           class="city_select_city--item  text_ellipsis border_radius_normal">
-          {{item}}
+            <view class="text_ellipsis" hover-class="none" hover-stop-propagation="false">
+              {{item}}
+            </view>
         </view>
       </view>
     </view>
@@ -47,7 +49,9 @@
         <view 
           wx:for="{{historyCities}}" wx:key="index"
           class="text_ellipsis border_radius_normal city_select_city--item margin-right_4 history_cities">
-          {{item}}
+          <view class="text_ellipsis" hover-class="none" hover-stop-propagation="false">
+            {{item}}
+          </view>
         </view>
       </view>
       

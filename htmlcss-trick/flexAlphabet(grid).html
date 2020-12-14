@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    .container {
+      background: orange;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+
+    }
+    /*  display: grid; 设置grid 布局 */
+    /* grid-template-columns: repeat(7, 1fr) 等同于 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr */
+    /* grid-template-columns 设置7列 每一列的宽度相等*/
+    /* grid-template-rows  设置4行 每一行的行高相等*/
+    /* grid-column-gap 设置列与列的间隔宽度 */
+    /* grid-row-gap 设置行与行间隔宽度  */
+
+
+    .item {
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: cyan;
+    }
+
+    .delete {
+      grid-column-start: 6;
+      grid-column-end: 8;
+      grid-row-start: 4;
+      grid-row-end: 4;
+    }
+
+    /* grid-column-start： item 左边框所在的垂直网格线 */
+    /* grid-column-end：item 右边框所在的垂直网格线 */
+    /* https://cssgridgarden.com/ */
+    /* https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html */
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+    <div class="item">H</div>
+    <div class="item">I</div>
+    <div class="item">J</div>
+    <div class="item">K</div>
+    <div class="item">L</div>
+    <div class="item">M</div>
+    <div class="item">N</div>
+    <div class="item">O</div>
+    <div class="item">P</div>
+    <div class="item">Q</div>
+    <div class="item">R</div>
+    <div class="item">S</div>
+    <div class="item">T</div>
+    <div class="item">U</div>
+    <div class="item">V</div>
+    <div class="item">W</div>
+    <div class="item">Z</div>
+    <div class="item">Y</div>
+    <div class="item">Z</div>
+    <div class="item delete">删除</div>
+  </div>
+</body>
+</html>

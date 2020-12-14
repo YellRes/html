@@ -91,8 +91,8 @@ Page {
 .city_select_city--container {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);`
-  grid-template-rows: repeat(2, 13.89vh);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 4.17vh;
   margin: 4.17vh 0;
 
@@ -100,10 +100,10 @@ Page {
 
 .city_select_city--item {
   background-color: #2f303f;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  line-height: 13.89vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* line-height: 13.89vh; */
   padding: 0 4.17vh;
   box-sizing: border-box;
 }

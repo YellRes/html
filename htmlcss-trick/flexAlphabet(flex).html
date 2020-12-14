@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+ 
+    .container {
+      background: orange;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .item {
+      width: 13%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: cyan;
+
+    }
+
+    .item:nth-child(n + 8) {
+      margin-top: 10px;
+    }
+    
+    .delete {
+      width: 27.5%; 
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+    <div class="item">H</div>
+    <div class="item">I</div>
+    <div class="item">J</div>
+    <div class="item">K</div>
+    <div class="item">L</div>
+    <div class="item">M</div>
+    <div class="item">N</div>
+    <div class="item">O</div>
+    <div class="item">P</div>
+    <div class="item">Q</div>
+    <div class="item">R</div>
+    <div class="item">S</div>
+    <div class="item">T</div>
+    <div class="item">U</div>
+    <div class="item">V</div>
+    <div class="item">W</div>
+    <div class="item">Z</div>
+    <div class="item">Y</div>
+    <div class="item">Z</div>
+    <div class="item delete">删除</div>
+  </div>
+
+  <!-- 
+    使用flex布局, jusitify-content: space-between 确保两端对齐。 
+    关键是最后一行里面的 删除 的div 我们要手动设置宽度 
+    删除 div 的宽度 = 普通 div 宽度  * 2 + 间隙的宽度 
+  -->
+</body>
+</html>
